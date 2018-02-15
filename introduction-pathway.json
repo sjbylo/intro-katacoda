@@ -2,6 +2,11 @@
   "title": "Foundations of OpenShift",
   "courses": [
     {
+      "external_link": "https://learn.openshift.com/introduction/steve-test/",
+      "course_id": "steve-test",
+      "title": "Steve test"
+    },
+    {
       "external_link": "https://learn.openshift.com/introduction/getting-started/",
       "course_id": "getting-started",
       "title": "Getting Started with OpenShift for Developers"
