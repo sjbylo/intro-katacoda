@@ -18,7 +18,7 @@ For each scenario, please do the following:
 
 ### Categories
 
-There are currently three categories, [Foundations of OpenShift, by Steve 3](https://learn.openshift.com/introduction), [Building Applications On OpenShift](https://learn.openshift.com/middleware) and [OpenShift Playgrounds](https://learn.openshift.com/playgrounds). Each category has its own directory for content, assets and a pathway file to define the order on the page:
+There are currently three categories, [Foundations of OpenShift](https://learn.openshift.com/introduction), [Building Applications On OpenShift](https://learn.openshift.com/middleware) and [OpenShift Playgrounds](https://learn.openshift.com/playgrounds). Each category has its own directory for content, assets and a pathway file to define the order on the page:
 
 * Content: https://github.com/openshift-evangelists/intro-katacoda/tree/master/introduction
 * Assets: https://github.com/openshift-evangelists/intro-katacoda/tree/master/assets/introduction
