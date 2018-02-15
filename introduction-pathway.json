@@ -5,7 +5,7 @@
       "external_link": "https://www.katacoda.com/sjbylo/courses/introduction/steve-test",
       "course_id": "steve-test",
       "title": "Steve test"
-    },
+    }/*,
     {
       "external_link": "https://learn.openshift.com/introduction/getting-started/",
       "course_id": "getting-started",
@@ -46,5 +46,6 @@
       "course_id": "using-metrics",
       "title": "Exploring and using metrics and HPAs"
     }
+*/
   ]
 }
