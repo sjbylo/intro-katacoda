@@ -2,7 +2,7 @@
   "title": "Foundations of OpenShift",
   "courses": [
     {
-      "external_link": "https://learn.openshift.com/introduction/steve-test/",
+      "external_link": "https://www.katacoda.com/sjbylo/courses/introduction/steve-test",
       "course_id": "steve-test",
       "title": "Steve test"
     },
