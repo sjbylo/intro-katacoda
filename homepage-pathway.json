@@ -3,8 +3,8 @@
   "private": true,
   "courses": [
     {
-      "external_link": "https://learn.openshift.com/introduction/",
-      "title": "Foundations of OpenShift"
+      "external_link": "https://www.katacoda.com/sjbylo/courses/introduction/",
+      "title": "Foundations of OpenShift, by Steve"
     },
     {
       "external_link": "https://learn.openshift.com/middleware/",
