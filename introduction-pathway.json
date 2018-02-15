@@ -2,9 +2,9 @@
   "title": "Foundations of OpenShift, by Steve Bylo",
   "courses": [
     {
-      "external_link": "https://www.katacoda.com/sjbylo/courses/introduction/steve-test",
-      "course_id": "steve-test",
-      "title": "Steve test 2"
+      "external_link": "https://www.katacoda.com/sjbylo/courses/introduction/simple-s2i-builder",
+      "course_id": "simple-s2i-builder",
+      "title": "Learn how to create your own s2i builder image using a simple example."
     }
   ]
 }
