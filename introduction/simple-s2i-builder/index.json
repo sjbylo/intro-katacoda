@@ -21,10 +21,10 @@
             "title": "Topic 1 - Introduction",
             "text": "01.md"
         }, {
-            "title": "Topic 2 - How to create the S2I Builder Image",
+            "title": "Topic 2 - Creating the S2I Builder Image",
             "text": "02.md"
         }, {
-            "title": "Topic 3 - How to use the S2I Builder Image to create an application image",
+            "title": "Topic 3 - Using the S2I Builder Image",
             "text": "03.md"
         }],
         "intro": {
