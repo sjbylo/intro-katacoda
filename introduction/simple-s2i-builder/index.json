@@ -39,6 +39,7 @@
           "host01": [
 		{"file": "route.json", "target": "/root/"},
 		{"directory": "builder", "target": "/root/"},
+		{"dir": "builder", "target": "/root/"},
           	{"file": "Dockerfile", "target": "/root/"}
 	]
         }
