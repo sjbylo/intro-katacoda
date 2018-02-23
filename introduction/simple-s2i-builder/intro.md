@@ -7,9 +7,5 @@ This tutorial is divided into two main parts.
 
 Part One explains what's needed to create a new builder image.
 
-- The "simplified runtime" used in this tutorial is just the Linux command "cat", which will output the "source code" provided by running the command "cat src/*"
-
 Part two explains the "source code" for the simplified application. 
-
-- The "source code" is simply files under a src/ directory in your workspace. 
 
