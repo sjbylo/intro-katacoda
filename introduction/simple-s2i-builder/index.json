@@ -37,8 +37,8 @@
         },
         "assets": {
           "host01": [
-		{"file": "*", "target": "/root/"},
-		{"file": "Dockerfile", "target": "/root/"}
+		{"file": "Dockerfile", "target": "/root/"},
+		{"file": "*", "target": "/root/"}
 	]
         }
     }
