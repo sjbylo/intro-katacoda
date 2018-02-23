@@ -37,7 +37,8 @@
         },
         "assets": {
           "host01": [
-		{"file": "assets.tgz", "target": "/root/"}
+		{"file": "assets.tgz", "target": "/root/"},
+		{"file": "assets.tar", "target": "/root/"}
 	]
         }
     }
