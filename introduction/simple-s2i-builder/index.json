@@ -18,11 +18,14 @@
     },
     "details": {
         "steps": [{
-            "title": "Topic 1 - T1",
+            "title": "Topic 1 - Introduction",
             "text": "01.md"
         }, {
-            "title": "Topic 2 - T2",
+            "title": "Topic 2 - How to create the S2I Builder Image",
             "text": "02.md"
+        }, {
+            "title": "Topic 3 - How to use the S2I Builder Image to create an application image",
+            "text": "03.md"
         }],
         "intro": {
             "courseData": "env-init.sh",
