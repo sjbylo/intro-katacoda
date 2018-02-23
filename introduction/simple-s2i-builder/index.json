@@ -36,7 +36,10 @@
             "text": "finish.md"
         },
         "assets": {
-          "host01": [{"file": "route.json", "target": "/root/"}]
+          "host01": [
+		{"file": "route.json", "target": "/root/"},
+          	{"file": "Dockerfile", "target": "/root/"}
+	]
         }
     }
 }
