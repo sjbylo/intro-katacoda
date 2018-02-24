@@ -20,7 +20,8 @@ tar xf assets.tar
 docker pull openshift/base-centos7
 END
 
-cat script | ssh root@host01 "cat > script && bash script"
+scp script root@host01:
+ssh root@host01 "bash script"
 
 #wait
 
