@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+echo "Starting the 'cat runtime'..."
+echo "Running myapp: cat /tmp/myapp/*"
+
+cat /tmp/myapp/*
+
+echo "That was exhausting... sleeping..."
+while true; do sleep 1; echo -n .;done
