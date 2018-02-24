@@ -2,8 +2,8 @@
 
 set -x 
 
-cat > script <<END
-exec > .start.log 2>&1
+cat > setup.sh <<END
+exec > .setup.log 2>&1
 
 for i in {1..50}; do oc policy add-role-to-user system:image-puller system:anonymous && break || sleep 1; done
 
@@ -20,8 +20,8 @@ tar xf assets.tar
 docker pull openshift/base-centos7
 END
 
-scp script root@host01:
-ssh root@host01 "bash script"
+scp setup.sh root@host01:.setup.sh
+ssh root@host01 "bash .setup.sh"
 
 #wait
 
