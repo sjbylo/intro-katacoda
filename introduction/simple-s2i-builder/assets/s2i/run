@@ -1,9 +1,0 @@
-#!/bin/sh
-
-set -e
-
-echo "Running myapp..."
-cat /tmp/myapp/*
-
-echo "Sleeping..."
-while true; do sleep 1; echo -n .;done
