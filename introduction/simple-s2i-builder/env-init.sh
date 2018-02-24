@@ -20,8 +20,12 @@ tar xf assets.tar
 docker pull openshift/base-centos7
 END
 
+ssh root@host01 "touch here1"
+
 scp setup.sh root@host01:.setup.sh
+ssh root@host01 "touch here2"
 ssh root@host01 "bash .setup.sh"
+ssh root@host01 "touch here3"
 
 #wait
 
