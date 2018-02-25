@@ -11,6 +11,7 @@ function finish {
 }
 trap finish EXIT
 
+#----------------------------------
 cat > /tmp/setup.sh <<END
 #!/bin/bash -x
 #exec > .setup.log 2>&1
@@ -29,6 +30,7 @@ tar xf assets.tar
 
 docker pull openshift/base-centos7
 END
+#----------------------------------
 
 ssh root@host01 "touch here1"
 
