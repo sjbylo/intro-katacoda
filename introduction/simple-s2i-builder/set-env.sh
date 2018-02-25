@@ -14,6 +14,8 @@ for i in {1..20}; do oc policy add-role-to-user system:image-puller system:anony
 for i in {1..20}; do test -f assets.tar && break || sleep 1; done
 tar xf assets.tar
 
+ls -la
+
 #docker pull centos/python-35-centos7:latest
 #docker pull openshiftroadshow/parksmap-katacoda:1.0.0
 #oc import-image openshift/base-centos7 --confirm -n openshift
