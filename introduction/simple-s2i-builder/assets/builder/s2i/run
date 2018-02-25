@@ -7,5 +7,5 @@ echo "Running myapp: cat /tmp/myapp/*"
 
 cat /tmp/myapp/*
 
-echo "That was exhausting... sleeping..."
+echo "Well, that was exhausting! Sleeping..."
 while true; do sleep 1; echo -n .;done
