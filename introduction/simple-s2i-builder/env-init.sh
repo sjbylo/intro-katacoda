@@ -1,3 +1,5 @@
+#!/bin/bash
+
 set -x 
 
 ssh root@host01 "touch here0"
