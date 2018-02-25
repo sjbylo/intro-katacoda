@@ -1,6 +1,15 @@
-# Send output to a file
-
 set -x 
+
+ssh root@host01 "touch here0"
+
+LOG=/tmp/run.log
+
+exec >$LOG 2>&1
+
+function finish {
+	scp $LOG root@host01:
+}
+trap finish EXIT
 
 cat > /tmp/setup.sh <<END
 exec > .setup.log 2>&1
