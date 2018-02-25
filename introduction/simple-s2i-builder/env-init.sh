@@ -2,7 +2,7 @@
 
 set -x 
 
-cat > setup.sh <<END
+cat > /tmp/setup.sh <<END
 exec > .setup.log 2>&1
 
 for i in {1..50}; do oc policy add-role-to-user system:image-puller system:anonymous && break || sleep 1; done
@@ -22,7 +22,7 @@ END
 
 ssh root@host01 "touch here1"
 
-scp setup.sh root@host01:.setup.sh
+scp /tmp/setup.sh root@host01:.setup.sh
 ssh root@host01 "touch here2"
 ssh root@host01 "bash .setup.sh"
 ssh root@host01 "touch here3"
