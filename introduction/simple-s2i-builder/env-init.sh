@@ -1,6 +1,4 @@
-#!/bin/bash
-
-set -x 
+#!/bin/bash -x
 
 ssh root@host01 "touch here0"
 
@@ -14,7 +12,8 @@ function finish {
 trap finish EXIT
 
 cat > /tmp/setup.sh <<END
-exec > .setup.log 2>&1
+#!/bin/bash -x
+#exec > .setup.log 2>&1
 
 for i in {1..50}; do oc policy add-role-to-user system:image-puller system:anonymous && break || sleep 1; done
 
@@ -35,7 +34,7 @@ ssh root@host01 "touch here1"
 
 scp /tmp/setup.sh root@host01:.setup.sh
 ssh root@host01 "touch here2"
-ssh root@host01 "bash .setup.sh"
+ssh root@host01 "bash .setup.sh > ~/.setup.log 2>&1"
 ssh root@host01 "touch here3"
 
 #wait
