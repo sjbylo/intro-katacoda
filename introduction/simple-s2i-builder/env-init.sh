@@ -36,7 +36,7 @@ ssh root@host01 "touch here1"
 
 scp /tmp/setup.sh root@host01:.setup.sh
 ssh root@host01 "touch here2"
-ssh root@host01 "bash .setup.sh > ~/.setup.log 2>&1"
+ssh root@host01 "bash -x .setup.sh > ~/.setup.log 2>&1"
 ssh root@host01 "touch here3"
 
 #wait
