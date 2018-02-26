@@ -2,8 +2,8 @@
 
 set -e
 
-echo "Starting the 'cat runtime'..."
-echo "Running myapp: cat /tmp/myapp/*"
+echo "Launching the 'cat runtime'..."
+echo "Starting application: cat /tmp/myapp/*"
 
 cat /tmp/myapp/*
 
