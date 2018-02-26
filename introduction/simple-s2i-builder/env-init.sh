@@ -1,13 +1,14 @@
 i=0
 let i=i+1; ssh root@host01 "touch here$i"
 
+LOG=.exec.log
+
 function finish {
 	cat $LOG | ssh root@host01 "cat > $LOG"
 	let i=i+1; ssh root@host01 "touch herefin$i"
 }
 trap finish EXIT
 
-LOG=.exec.log
 exec > $LOG 2>&1
 
 let i=i+1; ssh root@host01 "touch here$i"
