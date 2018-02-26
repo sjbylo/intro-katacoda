@@ -3,7 +3,7 @@
     "title": "Create your own S2I Builder Image",
     "description": "Learn how to create your own S2I Builder Image using a simplified example.",
     "pathwayTitle": "OpenShift",
-    "difficulty": "beginner",
+    "difficulty": "intermediate",
     "time": "15-20 minutes",
     "backend": {
         "imageid": "openshift",
