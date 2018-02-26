@@ -1,41 +1,50 @@
 i=0
 let i=i+1; ssh root@host01 "touch here$i"
 
-LOG=.exec.log
+pwd 2>&1 | ssh root@host01 "cat >> commands"
+ssh root@host01 "echo >> commands"
 
-function finish {
-	cat $LOG | ssh root@host01 "cat > $LOG"
-	let i=i+1; ssh root@host01 "touch herefin$i"
-}
-trap finish EXIT
+id 2>&1 | ssh root@host01 "cat >> commands"
+ssh root@host01 "echo >> commands"
 
-#exec > $LOG 2>&1
+ls -la 2>&1 | ssh root@host01 "cat >> commands"
+ssh root@host01 "echo >> commands"
+
+ls -la 2>&1 | ssh root@host01 "cat >> commands"
+ssh root@host01 "echo >> commands"
+
 
 let i=i+1; ssh root@host01 "touch here$i"
 
-#----------------------------------
-ssh root@host01 "cat > .setup.sh" <<END
-#exec > .setup.log 2>&1
+LOG=run.log
+let i=i+1; ssh root@host01 "touch here$i"
 
-for i in {1..50}; do oc policy add-role-to-user system:image-puller system:anonymous && break || sleep 1; done
+id >> $LOG 2>&1
+let i=i+1; ssh root@host01 "touch here$i"
 
-#while ! test -f assets.tgz; do sleep 1; done; tar xzf assets.tgz
-#git clone https://github.com/sjbylo/intro-katacoda.git .tmp && cp -frp .tmp/introduction/simple-s2i-builder/assets/* . && rm -rf .tmp/
+blah >> $LOG 2>&1
+let i=i+1; ssh root@host01 "touch here$i"
 
-for i in {1..50}; do test -f assets.tar && break || sleep 1; done
-tar xf assets.tar
+find . >> $LOG 2>&1
+let i=i+1; ssh root@host01 "touch here$i"
 
-#docker pull centos/python-35-centos7:latest
-#docker pull openshiftroadshow/parksmap-katacoda:1.0.0
-#oc import-image openshift/base-centos7 --confirm -n openshift
+cat $LOG | ssh root@host01 "cat > run.log"
 
-docker pull openshift/base-centos7
+let i=i+1; ssh root@host01 "touch here$i"
 
-chown -R root.root builder/ src/
-END
-#----------------------------------
+#exec >$LOG 2>&1
+let i=i+1; ssh root@host01 "touch here$i"
 
-ssh root@host01 "bash -x .setup.sh > .setup.log 2>&1"
+function finish {
+	cat $LOG | ssh root@host01 "cat > $LOG"
+}
+trap finish EXIT
+
+#scp $LOG root@host01:
+
+let i=i+1; ssh root@host01 "touch here$i"
+
+ssh root@host01 "chown -R root.root builder/ src/"
 
 let i=i+1; ssh root@host01 "touch hereend$i"
 
