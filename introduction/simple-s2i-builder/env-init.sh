@@ -8,13 +8,12 @@ ssh root@host01 "echo >> commands"
 ls -la | ssh root@host01 "cat >> commands"
 ssh root@host01 "echo >> commands"
 
-id > id
-scp id root@host01:
-
 LOG=/tmp/run.log
 
+id > $LOG
+
 ssh root@host01 "touch /root/here2"
-exec >$LOG 2>&1
+#exec >$LOG 2>&1
 ssh root@host01 "touch /root/here3"
 
 function finish {
@@ -22,5 +21,5 @@ function finish {
 }
 trap finish EXIT
 
-find .
+find . >> $LOG 2>&1
 
