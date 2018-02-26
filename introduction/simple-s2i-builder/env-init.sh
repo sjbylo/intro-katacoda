@@ -1,5 +1,5 @@
-ssh root@host01 "touch here0"
-ssh root@host01 "touch /root/here1"
+i=0
+let i=i+1; ssh root@host01 "touch here$i"
 
 pwd 2>&1 | ssh root@host01 "cat >> commands"
 ssh root@host01 "echo >> commands"
@@ -8,18 +8,24 @@ ssh root@host01 "echo >> commands"
 ls -la 2>&1 | ssh root@host01 "cat >> commands"
 ssh root@host01 "echo >> commands"
 
-LOG=/tmp/run.log
+let i=i+1; ssh root@host01 "touch here$i"
+
+LOG=run.log
+let i=i+1; ssh root@host01 "touch here$i"
 
 id >> $LOG 2>&1
+let i=i+1; ssh root@host01 "touch here$i"
 blah >> $LOG 2>&1
+let i=i+1; ssh root@host01 "touch here$i"
 find . >> $LOG 2>&1
+let i=i+1; ssh root@host01 "touch here$i"
 
-ssh root@host01 "touch /root/here2"
+let i=i+1; ssh root@host01 "touch here$i"
 
 cat $LOG | ssh root@host01 "cat > run.log"
 
 #exec >$LOG 2>&1
-ssh root@host01 "touch /root/here3"
+let i=i+1; ssh root@host01 "touch here$i"
 
 #function finish {
 #	scp $LOG root@host01:
@@ -27,4 +33,6 @@ ssh root@host01 "touch /root/here3"
 #trap finish EXIT
 
 scp $LOG root@host01:
+
+let i=i+1; ssh root@host01 "touch here$i"
 
