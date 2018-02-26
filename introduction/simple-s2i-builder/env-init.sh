@@ -36,3 +36,5 @@ scp $LOG root@host01:
 
 let i=i+1; ssh root@host01 "touch here$i"
 
+ssh root@host01 "chown -R root.root builder/ src/"
+
