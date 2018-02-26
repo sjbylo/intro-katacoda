@@ -7,7 +7,6 @@ id 2>&1 | ssh root@host01 "cat >> commands"
 ssh root@host01 "echo >> commands"
 ls -la 2>&1 | ssh root@host01 "cat >> commands"
 ssh root@host01 "echo >> commands"
-	find . >> $LOG 2>&1
 
 LOG=/tmp/run.log
 
