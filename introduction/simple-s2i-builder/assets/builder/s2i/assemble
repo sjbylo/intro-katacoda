@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo "---> Assemble script starting..."
+
 set -ex
 
 echo "---> Preparing source..."
@@ -11,4 +13,6 @@ mkdir -p /tmp/myapp
 
 # Copy the 'source code' to where the 'cat' runtime will expect it to be
 cp -Rf /tmp/src/* /tmp/myapp
+
+echo "---> Assemble script finished..."
 
