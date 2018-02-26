@@ -1,19 +1,24 @@
 ssh root@host01 "touch here0"
 ssh root@host01 "touch /root/here1"
 
-pwd | ssh root@host01 "cat >> commands 2>&1"
-ssh root@host01 "echo >> commands 2>&1"
-id | ssh root@host01 "cat >> commands 2>&1"
-ssh root@host01 "echo >> commands 2>&1"
-ls -la | ssh root@host01 "cat >> commands 2>&1"
-ssh root@host01 "echo >> commands 2>&1"
+pwd 2>&1 | ssh root@host01 "cat >> commands"
+ssh root@host01 "echo >> commands"
+id 2>&1 | ssh root@host01 "cat >> commands"
+ssh root@host01 "echo >> commands"
+ls -la 2>&1 | ssh root@host01 "cat >> commands"
+ssh root@host01 "echo >> commands"
+	find . >> $LOG 2>&1
 
 LOG=/tmp/run.log
 
 id >> $LOG 2>&1
 blah >> $LOG 2>&1
+find . >> $LOG 2>&1
 
 ssh root@host01 "touch /root/here2"
+
+cat $LOG | ssh root@host01 "cat > run.log"
+
 #exec >$LOG 2>&1
 ssh root@host01 "touch /root/here3"
 
@@ -21,8 +26,6 @@ ssh root@host01 "touch /root/here3"
 #	scp $LOG root@host01:
 #}
 #trap finish EXIT
-
-find . >> $LOG 2>&1
 
 scp $LOG root@host01:
 
