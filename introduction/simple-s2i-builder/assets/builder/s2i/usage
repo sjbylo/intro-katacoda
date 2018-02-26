@@ -1,9 +1,11 @@
 #!/bin/sh
 
 echo "\
-This is a simple s2i builder image example which runs the very simple 'cat runtime'.
+This is a simple S2I Builder Image which runs the very simple 'cat runtime'.  
+More information can be found here: https://www.katacoda.com/sjbylo/courses/introduction/simple-s2i-builder
 
 Example: 
-oc new-app s2i-simple-builder~https://github.com/sjbylo/ocp-topics --context-dir s2i-simple-builder/myapp --name myapp
+oc new-app s2i-simple-builder~https://github.com/sjbylo/intro-katacoda.git --context-dir=introduction/simple-s2i-builder/assets/src --name myapp
+
 "
 
