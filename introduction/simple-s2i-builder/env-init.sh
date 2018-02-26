@@ -1,5 +1,7 @@
 #!/bin/sh 
 
+set +e
+
 ssh root@host01 "touch here0"
 ssh root@host01 "touch /root/here1"
 
