@@ -16,5 +16,5 @@ COPY ./s2i/ /usr/libexec/s2i
 # Set the default user for the container to run as
 USER 1001
 
-# Set the default CMD to print the usage of the image, if somebody uses "docker run"
+# Set the default CMD to print the usage of the image, if somebody runs "docker run"
 CMD /usr/libexec/s2i/usage
