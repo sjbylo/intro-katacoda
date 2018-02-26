@@ -4,7 +4,7 @@
     "description": "Learn how to create your own S2I Builder Image using a simplified example.",
     "pathwayTitle": "OpenShift",
     "difficulty": "beginner",
-    "time": "5-10 minutes",
+    "time": "15-20 minutes",
     "backend": {
         "imageid": "openshift",
         "port": 8443
