@@ -9,7 +9,7 @@ function finish {
 }
 trap finish EXIT
 
-exec > $LOG 2>&1
+#exec > $LOG 2>&1
 
 let i=i+1; ssh root@host01 "touch here$i"
 
