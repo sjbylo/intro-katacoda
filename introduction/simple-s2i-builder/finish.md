@@ -5,6 +5,6 @@ and here is another blog about [creating S2I Builder Images](https://blog.opensh
 
 Read more about the [Anatomy of a builder image](https://github.com/openshift/source-to-image/#anatomy-of-a-builder-image).
 
-More can be read about S2I at the [project's home page](https://github.com/openshift/source-to-image/) 
+More can be read about S2I at the [project's home page](https://github.com/openshift/source-to-image/blob/master/README.md)
 
 
