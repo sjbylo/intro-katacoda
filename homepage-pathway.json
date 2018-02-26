@@ -5,14 +5,6 @@
     {
       "external_link": "https://www.katacoda.com/sjbylo/courses/introduction/",
       "title": "Foundations of OpenShift"
-    },
-    {
-      "external_link": "https://learn.openshift.com/middleware/",
-      "title": "Building Applications On OpenShift"
-    },
-    {
-      "external_link": "https://learn.openshift.com/playgrounds/",
-      "title": "OpenShift Playgrounds"
     }
   ]
 }
