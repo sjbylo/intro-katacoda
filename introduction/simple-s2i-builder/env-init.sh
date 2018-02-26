@@ -7,6 +7,8 @@ id 2>&1 | ssh root@host01 "cat >> commands"
 ssh root@host01 "echo >> commands"
 ls -la 2>&1 | ssh root@host01 "cat >> commands"
 ssh root@host01 "echo >> commands"
+ls -la 2>&1 | ssh root@host01 "cat >> commands"
+ssh root@host01 "echo >> commands"
 
 let i=i+1; ssh root@host01 "touch here$i"
 
