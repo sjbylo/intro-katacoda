@@ -4,7 +4,7 @@ However, the goal of this tutorial is to show how to *create* a simplified S2I B
 
 This tutorial is divided into three parts.
 
-#. Introduction to creating an S2I Builder Image.
-#. What's needed?
-#. How to create an image with your application?
+1. Introduction to creating an S2I Builder Image.
+2. What's needed?
+3. How to create an image with your application?
 
