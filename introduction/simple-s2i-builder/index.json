@@ -1,7 +1,7 @@
 {
     "icon": "fa-openshift",
-    "title": "Create your own s2i builder image",
-    "description": "Learn how to create your own s2i builder image using a simplified example.",
+    "title": "Create your own S2I Builder Image",
+    "description": "Learn how to create your own S2I Builder Image using a simplified example.",
     "pathwayTitle": "OpenShift",
     "difficulty": "beginner",
     "time": "5-10 minutes",
