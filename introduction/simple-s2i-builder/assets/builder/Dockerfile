@@ -1,10 +1,7 @@
-
-# This image creates a simplified  s2i builder image
-
+# This Dockerfile creates a simplified s2i builder image
 FROM openshift/base-centos7
 
-# Set labels used in OpenShift to describe the builder images
-
+# Set labels, used by OpenShift, to identify and describe the builder image
 LABEL io.k8s.description="Simple s2i builder example, used to build the simple 'cat-runtime'." \
       io.k8s.display-name="Simple s2i builder example" \
       io.openshift.s2i.scripts-url="image:///usr/libexec/s2i" \
